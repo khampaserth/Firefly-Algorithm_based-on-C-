@@ -1,0 +1,20 @@
+set xrange [-6:6]
+
+set xtics 2
+set yrange [-6:6]
+
+set ytics 2
+
+
+set xlabel "(m)"
+set ylabel "(m)"
+
+set size square
+set size 0.8, 0.8
+#plot 'FF_pos.txt' u 1:2 wi point pt 1 ps 2
+#replot 'location_su.txt' u 4:5 wi point pt 1 ps 2
+plot 'Fitness_value_ocation.txt' u 1:2 wi point pt 1 ps 2
+
+set terminal postscript eps color enhanced dash "Helvetica" 12 lw 1
+set output "location.eps"
+rep
